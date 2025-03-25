@@ -5,6 +5,10 @@ name: Node.js CI/CD ShopDEV
 
 on:
   push:
+    path:
+      - '!README.md'
+      - '!docs/**'
+      - '**.js'
     branches: [ "main" ]
 jobs:
   build:
